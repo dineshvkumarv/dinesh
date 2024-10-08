@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    
+     <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+   
+    <h1 id="h1id">Home Page</h1>
+    <h2 id="h2id"></h2>
+    
+    
+    
+    <h3 id="msgid" ></h3>
+
+
+   
+    <form id="empformid" style="display: none;">
+
+        <label>ID:</label>
+        <input type="text" name="id" disabled>
+        <br><br>
+
+        <label>FirstName:</label>
+        <input type="text" name="firstName">
+        <br><br>
+
+        <label>LastName:</label>
+        <input type="text" name="lastName">
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email">
+        <br><br>
+
+        <label>Phone:</label>
+        <input type="number" name="mobileNumber">
+        <br><br>
+
+
+
+
+        <input type="radio" id="genderMale" name="gender" value="male" checked/>
+        <label for="genderMale">Male</label>
+
+        <input type="radio" id="genderFemale" name="gender" value="female"/>
+        <label for="genderFemale">Female</label>
+        <br><br>
+
+
+
+
+        <input type="checkbox" name="qf" id="qualificationBE" value="BE/B.Tech">
+        <label for="qualificationBE">BE/B.Tech</label>
+
+        <input type="checkbox" name="qf" id="qualificationME" value="ME/M.Tech">
+        <label for="qualificationME">ME/M.Tech</label>
+
+        <input type="checkbox" name="qf" id="qualificationPHD" value="PHD">
+        <label for="qualificationPHD">PHD</label>
+        <br><br>
+
+
+
+
+        <label for="stateid">Select State</label>
+        <select id="stateid" name="state">
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Kerala">Kerala</option>
+        </select>
+        <br><br>
+
+
+
+
+        <label for="hobbiesid">Select Hobbies</label>
+        <select id="hobbiesid" multiple name="hobbies">
+            <option value="Cricket">Cricket</option>
+            <option value="Singing">Singing</option>
+            <option value="Playing">Playing</option>
+            <option value="Driving">Driving</option>
+        </select>
+        <br><br>
+
+        
+        <button id="updateid" style="background-color: green;">Update</button>
+        <button style="background-color: red;">Cancel</button>
+        <br><br>
+      
+        <hr>
+
+    </form>
+
+   
+   
+ 
+   
+    <form id="empformid1" style="display: none;">
+
+      
+
+        <label>FirstName:</label>
+        <input type="text" name="firstName">
+        <br><br>
+
+        <label>LastName:</label>
+        <input type="text" name="lastName">
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email">
+        <br><br>
+
+        <label>Phone:</label>
+        <input type="number" name="mobileNumber">
+        <br><br>
+
+
+
+
+        <input type="radio" id="genderMale" name="gender1" value="male" checked/>
+        <label for="genderMale">Male</label>
+
+        <input type="radio" id="genderFemale" name="gender1" value="female"/>
+        <label for="genderFemale">Female</label>
+        <br><br>
+
+
+
+
+        <input type="checkbox" name="qf1" id="qualificationBE" value="BE/B.Tech">
+        <label for="qualificationBE">BE/B.Tech</label>
+
+        <input type="checkbox" name="qf1" id="qualificationME" value="ME/M.Tech">
+        <label for="qualificationME">ME/M.Tech</label>
+
+        <input type="checkbox" name="qf1" id="qualificationPHD" value="PHD">
+        <label for="qualificationPHD">PHD</label>
+        <br><br>
+
+
+
+
+        <label for="stateid1">Select State</label>
+        <select id="stateid1" name="state">
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Kerala">Kerala</option>
+        </select>
+        <br><br>
+
+
+
+
+        <label for="hobbiesid1">Select Hobbies</label>
+        <select id="hobbiesid1" multiple name="hobbies">
+            <option value="Cricket">Cricket</option>
+            <option value="Singing">Singing</option>
+            <option value="Playing">Playing</option>
+            <option value="Driving">Driving</option>
+        </select>
+        <br><br>
+
+
+
+        
+        <button id="saveid" style="background-color: green;">Register</button>
+        <button style="background-color: Red;">Cancel</button>
+        <br><br>
+        <hr>
+        
+
+    </form>
+
+
+   
+
+    <h2>Employee Details</h2>
+
+    <button id="addId" style="display: block">New Registration</button>
+
+<br>
+    
+<div id="tabledivid" class="divtableclass">
+
+     <!-- table  -->
+    <table border="5" id="tableid">
+       
+        <tr>
+
+            <th>ID</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Gender</th>
+            <th>Qualification</th>
+            <th>State</th>
+            <th>Hobbies</th>
+            <th>Action</th>
+
+        </tr>
+
+       
+    </table>
+
+
+    <!-- <div id="pagination-controls" style="margin-left: 600px;">
+        <button id="prevPage" style="background-color: green; font-size: 17px;">Previous</button>
+        <span id="pageInfo"></span>
+        <button id="nextPage" style="background-color: black;font-size: 17px;">Next</button>
+        <button id="lastPage" style="background-color: red; font-size: 17px;">Last Page</button>
+
+    </div> -->
+
+
+</div>
+
+
+
+    <script>
+ 
+        let empform = document.querySelector("#empformid");
+        let empform1 = document.querySelector("#empformid1");
+
+
+        // Display form for New Registration
+
+        document.getElementById("addId").addEventListener("click",()=>{
+                    document.getElementById("empformid1").style.display = "block"
+                    document.getElementById("addId").style.display = "none"
+                    document.getElementById("empformid").style.display = 'none'
+                    document.getElementById("h1id").style.display = 'none'
+                    document.getElementById("h2id").innerHTML = 'Registration Form'
+                   
+        })
+        
+
+        
+
+        // Add Employee 
+        document.querySelector("#saveid").addEventListener("click", (event) => {
+        
+        event.preventDefault();
+        
+        //let id = empform.elements['id'].value;
+        let firstName = empform1.elements['firstName'].value;
+        let lastName = empform1.elements['lastName'].value;
+        let email = empform1.elements['email'].value;
+        let mobileNumber = empform1.elements['mobileNumber'].value;
+
+        let gender;
+        let genderList = document.querySelectorAll("input[name='gender1']");
+        for (let gender1 of genderList) {
+            if (gender1.checked) {
+                gender = gender1.value;
+            }
+        }
+
+        let qualifications = [];
+        let qualielelist = document.querySelectorAll("input[name='qf1']");
+        for (let qualification of qualielelist) {
+            if (qualification.checked) {
+                qualifications.push(qualification.value);
+            }
+        }
+
+        let state;
+        const statesb = document.querySelector('#stateid1');
+        for (let i = 0, len = statesb.options.length; i < len; i++) {
+            let opt = statesb.options[i];
+            if (opt.selected) {
+                state = opt.value;
+                break;
+            }
+        }
+
+        let hobbies = [];
+        const hobbiessb = document.querySelector('#hobbiesid1');
+        for (let i = 0, len = hobbiessb.options.length; i < len; i++) {
+            let opt = hobbiessb.options[i];
+            if (opt.selected) {
+                hobbies.push(opt.value);
+            }
+        }
+
+
+
+        const employee = {
+            "firstName": firstName,
+            "lastName": lastName,
+            "email": email,
+            "mobileNumber": mobileNumber,
+            "qualification": qualifications.length > 0 ? qualifications.toString() : null,
+            "gender": gender,
+            "state": state,
+            "hobbies": hobbies.length > 0 ? hobbies.toString() : null,
+        };
+
+        const URL = "http://77.37.45.2:9081/api/v1/employee/saveemployee"
+            fetch(URL, {
+                method: "POST",
+                body: JSON.stringify(employee),
+                headers: {
+                    "Content-type": "application/json; charset=UTF-8"
+                }
+            })
+            .then(response => response.json())
+            .then(json => {
+                if (!json.status) {
+                    empform1.reset();
+                    document.getElementById('msgid').innerHTML = "Congratulations, Successfully Registered your id is "+ json.id;
+                    console.log(json);
+                   
+                   
+
+                  // window.location.reload();
+                    setTimeout(function() {
+                                         location.reload();
+                              }, 10000);
+
+                } else {
+                    document.getElementById('msgid').innerHTML = "Sorry, Not Created, try again";
+                    // setTimeout(function() {
+                    //                      location.reload();
+                    //           }, 3000);
+
+                }
+            })
+            .catch(err => console.log(err));
+    });
+
+
+
+
+
+
+
+
+
+
+
+        // Update Employee details By ID from Edit form
+
+        document.querySelector("#updateid").addEventListener("click", (event) => {
+        
+            event.preventDefault();
+            
+
+            let id = empform.elements['id'].value;
+            let firstName = empform.elements['firstName'].value;
+            let lastName = empform.elements['lastName'].value;
+            let email = empform.elements['email'].value;
+            let mobileNumber = empform.elements['mobileNumber'].value;
+
+            let gender;
+            let genderList = document.querySelectorAll("input[name='gender']");
+            for (let gender1 of genderList) {
+                if (gender1.checked) {
+                    gender = gender1.value;
+                }
+            }
+
+            let qualifications = [];
+            let qualielelist = document.querySelectorAll("input[name='qf']");
+            for (let qualification of qualielelist) {
+                if (qualification.checked) {
+                    qualifications.push(qualification.value);
+                }
+            }
+
+            let state;
+            const statesb = document.querySelector('#stateid');
+            for (let i = 0, len = statesb.options.length; i < len; i++) {
+                let opt = statesb.options[i];
+                if (opt.selected) {
+                    state = opt.value;
+                    break;
+                }
+            }
+
+            let hobbies = [];
+            const hobbiessb = document.querySelector('#hobbiesid');
+            for (let i = 0, len = hobbiessb.options.length; i < len; i++) {
+                let opt = hobbiessb.options[i];
+                if (opt.selected) {
+                    hobbies.push(opt.value);
+                }
+            }
+
+
+
+            const employee = {
+                "id": id,
+                "firstName": firstName,
+                "lastName": lastName,
+                "email": email,
+                "mobileNumber": mobileNumber,
+                "qualification": qualifications.length > 0 ? qualifications.toString() : null,
+                "gender": gender,
+                "state": state,
+                "hobbies": hobbies.length > 0 ? hobbies.toString() : null,
+            };
+
+            const URL = `http://77.37.45.2:9081/api/v1/employee/updateemployee/${id}`;
+
+                fetch(URL, {
+                    method: "PUT",
+                    body: JSON.stringify(employee),
+                    headers: {
+                        "Content-type": "application/json; charset=UTF-8"
+                    }
+                })
+                .then(response => response.json())
+                .then(json => {
+                    if (!json.status) {
+                        document.getElementById('msgid').innerHTML = "Congratulations, Successfully Updated";
+                        console.log(json);
+                        empform.reset();
+
+                       // window.location.reload();
+                        setTimeout(function() {
+                                             location.reload();
+                                  }, 3000);
+
+                    } else {
+                        document.getElementById('msgid').innerHTML = "Sorry, Not Updated, try again";
+                        setTimeout(function() {
+                                             location.reload();
+                                  }, 3000);
+
+                    }
+                })
+                .catch(err => console.log(err));
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Load Table
+
+        document.addEventListener("DOMContentLoaded", (e) => {
+        let tableId = document.getElementById("tableid");
+
+            let URL = "http://77.37.45.2:9081/api/v1/employee/fetchallemployees";
+
+            // create table rows and 
+            // get data into table rows from server
+            fetch(URL, {
+                method: "GET",
+            })
+            .then(response => response.json())
+            .then(data => {
+                for (let i = 0; i < data.length; i++) {
+                 let student = data[i];
+
+                let tableRow = document.createElement('tr');
+
+                let tableEleId = document.createElement('td');
+                tableEleId.textContent = student.id;
+                tableRow.appendChild(tableEleId);
+
+                let tableEleFname = document.createElement('td');
+                tableEleFname.textContent = student.firstName;
+                tableRow.appendChild(tableEleFname);
+
+                let tableEleLname = document.createElement('td');
+                tableEleLname.textContent = student.lastName;
+                tableRow.appendChild(tableEleLname);
+
+                let tableEleEmail = document.createElement('td');
+                tableEleEmail.textContent = student.email;
+                tableRow.appendChild(tableEleEmail);
+
+                let tableElemobileNumber = document.createElement('td');
+                tableElemobileNumber.textContent = student.mobileNumber;
+                tableRow.appendChild(tableElemobileNumber);
+
+                let tableEleGender = document.createElement('td');
+                tableEleGender.textContent = student.gender;
+                tableRow.appendChild(tableEleGender);
+
+
+                let tableEleQualification = document.createElement('td');
+                tableEleQualification.textContent = student.qualification;
+                tableRow.appendChild(tableEleQualification);
+
+               
+                let tableEleState = document.createElement('td');
+                tableEleState.textContent = student.state;
+                tableRow.appendChild(tableEleState);
+
+                let tableEleHobbies = document.createElement('td');
+                tableEleHobbies.textContent = student.hobbies;
+                tableRow.appendChild(tableEleHobbies);
+
+
+
+
+
+
+                // Action Column 
+                let actionRow = document.createElement('td');
+
+
+
+                // Edit Btn in Action Column
+                let editBtn = document.createElement('button');
+                editBtn.textContent = "Edit";
+                editBtn.style.backgroundColor = 'green';
+
+                editBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        let id = student.id;
+                        console.log(id);
+
+                        let URL = `http://77.37.45.2:9081/api/v1/employee/fetchemployee/${id}`
+
+                        fetch(URL, {
+                            method: "GET",
+                            headers: {
+                                "Content-type": "application/json; charset=UTF-8"
+                            }
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            console.log(data);
+
+                            // document.querySelector('input[name="firstName"]').value = data.firstName;
+                            // document.querySelector('input[name="lastName"]').value = data.lastName;
+                            // document.querySelector('input[name="email"]').value = data.email;
+                            // document.querySelector('input[name="mobileNumber"]').value = data.mobileNumber;
+
+                            // // Set gender radio buttons
+                            // document.querySelector(`input[name="gender"][value="${data.gender}"]`).checked = true;
+
+                            // // Set qualifications checkboxes
+                            // document.querySelectorAll('input[name="qf"]').forEach(checkbox => {
+                            //     checkbox.checked = data.qualification.includes(checkbox.value);
+                            // });
+
+                            // // Set state select
+                            // document.querySelector('select[name="state"]').value = data.state;
+
+                            // // Set hobbies select
+                            //  const hobbiesSelect = document.querySelector('select[name="hobbies"]');
+                            // Array.from(hobbiesSelect.options).forEach(option => {
+                            //     option.selected = data.hobbies.includes(option.value);
+                            // });
+
+                            document.querySelector('input[name="id"]').value = data.id;
+                            document.querySelector('input[name="firstName"]').value = data && data.firstName ? data.firstName : "N/A";
+                            document.querySelector('input[name="lastName"]').value = data && data.lastName ? data.lastName : "N/A";
+                            document.querySelector('input[name="email"]').value = data && data.email ? data.email : "N/A";
+                            document.querySelector('input[name="mobileNumber"]').value = data && data.mobileNumber ? data.mobileNumber : "N/A";
+                            if (data && data.gender) {
+                                document.querySelector(`input[name="gender"][value="${data.gender}"]`).checked = true;
+                            } else {
+                                // Handle case where gender is not available
+                                document.querySelector('input[name="gender"]').checked = false; // Or another appropriate default
+                            }
+
+
+
+
+
+                            document.querySelectorAll('input[name="qf"]').forEach(checkbox => {
+                                 checkbox.checked = data && data.qualification ? data.qualification.includes(checkbox.value) : false;
+                            });
+
+
+
+                            // if (data && data.state) {
+                            //      document.querySelector('select[name="state"]').value = data.state;
+                            // } else {
+                            //     // Handle case where state is not available
+                            //     document.querySelector('select[name="state"]').value = "N/A"; // Or another appropriate default
+                            // }
+
+                            // if (data && data.state) {
+                            //     document.querySelector('select[name="state"]').value = data.state;
+                            // } else {
+                            //     document.querySelector('select[name="state"]').value = "N/A";
+                            // }
+
+
+
+
+
+                            if (data && data.state) {
+                                const stateSelect = document.querySelector('select[name="state"]');
+                                const validOptions = Array.from(stateSelect.options).map(option => option.value);
+                                
+                                if (validOptions.includes(data.state)) {
+                                    stateSelect.value = data.state;
+                                } else {
+                                    stateSelect.value = "N/A";
+                                }
+                            } else {
+                                document.querySelector('select[name="state"]').value = "N/A";
+                            }
+
+
+
+
+                            const hobbiesSelect = document.querySelector('select[name="hobbies"]');
+                            Array.from(hobbiesSelect.options).forEach(option => {
+                                option.selected = data && data.hobbies ? data.hobbies.includes(option.value) : false;
+                            });
+                          
+
+                           
+
+
+
+                            document.getElementById("empformid").style.display = 'block';
+                            document.getElementById("empformid1").style.display = "none";
+                            document.getElementById("addId").style.display = "none";
+                            document.getElementById("h1id").style.display = 'none'
+                            document.getElementById("h2id").innerHTML = "Edit Form";
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+                        });
+
+                    });
+
+
+
+
+
+            // Delete Button in Action Column
+            let deleteBtn = document.createElement('Button');
+            let txtDelete = document.createTextNode("Delete");
+            deleteBtn.appendChild(txtDelete);
+            deleteBtn.style.backgroundColor = 'red';
+
+            deleteBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        let id = student.id;
+                        console.log(id);
+                        if (window.confirm("Are you Sure you want to Delete this Employee")) {
+                            let URL = `http://77.37.45.2:9081/api/v1/employee/deleteemployee/${id}`
+
+                            fetch(URL, {
+                                method: "DELETE",
+                            })
+                            .then(response => {
+                                if (response.ok) {
+                                    tableId.removeChild(tableRow);
+                                } else {
+                                    alert('Failed to delete the record.');
+                                }
+                            });
+                        }
+                    });
+
+            actionRow.appendChild(editBtn);
+            actionRow.appendChild(deleteBtn);
+
+            tableRow.appendChild(actionRow);
+            tableId.appendChild(tableRow);
+        }
+
+        // paginate function to add page link buttons
+       // paginate();
+    });
+
+
+
+
+
+
+   // Pagination logic
+    let currentPage = 1;
+    const rowsPerPage = 10;
+
+    function paginate() {
+                const table = document.getElementById("tableid");
+                const totalRows = table.rows.length - 1; // Subtract header row
+                const totalPages = Math.ceil(totalRows / rowsPerPage);
+
+                document.getElementById("pageInfo").textContent = `Page ${currentPage} of ${totalPages}`;
+
+                // Disable buttons accordingly
+                document.getElementById("prevPage").disabled = currentPage === 1;
+                document.getElementById("nextPage").disabled = currentPage === totalPages;
+                document.getElementById("lastPage").disabled = currentPage === totalPages;
+
+                // Hide all rows except for the ones in the current page
+                for (let i = 1; i <= totalRows; i++) {
+                    table.rows[i].style.display = 'none';
+                }
+
+                const start = (currentPage - 1) * rowsPerPage + 1;
+                const end = Math.min(start + rowsPerPage - 1, totalRows);
+
+                for (let i = start; i <= end; i++) {
+                    table.rows[i].style.display = '';
+                }
+        }
+
+            document.getElementById("prevPage").addEventListener("click", () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    paginate();
+                }
+            });
+
+            document.getElementById("nextPage").addEventListener("click", () => {
+                const table = document.getElementById("tableid");
+                const totalRows = table.rows.length - 1;
+                const totalPages = Math.ceil(totalRows / rowsPerPage);
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    paginate();
+                }
+            });
+
+            document.getElementById("lastPage").addEventListener("click", () => {
+                const table = document.getElementById("tableid");
+                const totalRows = table.rows.length - 1;
+                const totalPages = Math.ceil(totalRows / rowsPerPage);
+                currentPage = totalPages;
+                paginate();
+            });
+
+    // Initialize the pagination
+    paginate();
+
+
+    });
+
+
+
+
+    </script>
+
+</body>
+</html>
+

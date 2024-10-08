@@ -1,0 +1,293 @@
+FE --> BE
+
+Create a New Record:
+URL: http://77.37.45.2:9081/api/v1/employee/saveemployee
+Methods: POST
+Data in Request Body: {
+                "firstName": "Meera",
+                "lastName": "S V",
+                "email": "meera@gmail.com",
+                "mobileNumber": "9889838383",
+                "qualification": "BE, ME, PHD",
+                "gender": "Female"
+            }
+
+Fetch one employee based on id
+------------------------------------
+URL: http://77.37.45.2:9081/api/v1/employee/fetchemployee/2
+Methods: GET
+
+Response is : {
+                "id": 2,
+                "firstName": "Meera",
+                "lastName": "S V",
+                "email": "meera@gmail.com",
+                "mobileNumber": "9889838383",
+                "qualification": "BE, ME, PHD",
+                "gender": "Female"
+            }
+
+
+Fetch All employees
+-------------------
+URL: http://77.37.45.2:9081/api/v1/employee/fetchallemployees
+Methods: GET
+Response is :
+
+[
+    {
+        "id": 1,
+        "firstName": null,
+        "lastName": "Kumar",
+        "email": "ram@gmail.com",
+        "mobileNumber": "9889838383",
+        "qualification": "BE, ME",
+        "gender": "Male"
+    },
+    {
+        "id": 2,
+        "firstName": "Meera",
+        "lastName": "S V",
+        "email": "meera@gmail.com",
+        "mobileNumber": "9889838383",
+        "qualification": "BE, ME, PHD",
+        "gender": "Female"
+    }
+]
+
+
+Fetch All employees
+-------------------
+Api End Point or 
+URL: http://77.37.45.2:9081/api/v1/employee/updateemployee/1
+Methods: PUT
+Request is :
+{
+        "firstName": "Ram",
+        "lastName": "Kumar",
+        "email": "ram@gmail.com",
+        "mobileNumber": "9889838383",
+        "qualification": "BE, ME",
+        "gender": "Male"
+    }
+
+Api End Point or 
+URL: http://77.37.45.2:9081/api/v1/employee/deleteemployee/2
+Methods: DELETE
+
+
+
+
+id
+firstName
+lastName
+email
+mobileNumber
+gender
+qualification
+state
+hobbies
+
+
+
+
+POST
+
+http://77.37.45.2:9081/api/v1/employee/saveemployee
+
+
+
+
+GET
+
+http://77.37.45.2:9081/api/v1/employee/fetchallemployees
+
+
+
+
+PUT
+
+http://77.37.45.2:9081/api/v1/employee/updateemployee/1
+
+
+
+DELETE
+
+http://77.37.45.2:9081/api/v1/employee/deleteemployee/2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Local Host for DMS Project
+
+
+
+
+id
+name
+email
+phone
+address
+location
+state
+city
+pincode
+
+
+{
+    "name": "Sri Lakshmi Hospital",
+    "email": "sangeeta@gmail.com",
+    "phone": "+917896541230",
+    "address": "Mahdevapura",
+    "location": "Mahadevapura",
+    "state": "Karnataka",
+    "city": "Bangalore",
+    "pincode": "566048"
+}
+
+
+
+POST 
+http://localhost:3000/submit
+
+
+
+
+GET ALL 
+http://localhost:3000/submit
+
+
+
+
+GET  BY ID
+http://localhost:3000/submit/id
+
+
+
+
+PUT
+http://localhost:3000/submit/id
+
+
+
+
+DELETE
+http://localhost:3000/submit/id
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+web API's
+
+use   following Apis  for getting data in your DMS project:
+
+
+
+Hospital table 
+
+post     -->    http://77.37.45.2:1000/api/v1/hospitalregistration/fetchallhospitalregistrations
+
+getAll   -->    http://77.37.45.2:1000/api/v1/hospitalregistration/fetchallhospitalregistrations
+
+get      -->    http://77.37.45.2:1000/api/v1/hospitalregistration/fetchhospitalregistration/id
+
+put      -->    http://77.37.45.2:1000/api/v1/hospitalregistration/updatehospitalregistration/id
+   
+delete   -->    http://77.37.45.2:1000/api/v1/hospitalregistration/deletehospitalregistration/id
+
+
+
+
+
+
+
+
+For States 
+
+
+post     -->    http://77.37.45.2:1000/api/v1/state/savestate
+
+getAll   -->    http://77.37.45.2:1000/api/v1/state/fetchallstate
+
+get      -->    http://77.37.45.2:1000/api/v1/state/fetchstate/id
+
+put      -->    http://77.37.45.2:1000/api/v1/state/updatestate/id
+   
+delete   -->    http://77.37.45.2:1000/api/v1/state/deletestate/id
+
+
+
+
+
+
+For Cities
+
+
+
+
+post     -->    http://77.37.45.2:1000/api/v1/city/savecity
+
+getAll   -->    http://77.37.45.2:1000/api/v1/city/fetchallcity
+
+get      -->    http://77.37.45.2:1000/api/v1/city/fetchcity/id
+
+put      -->    http://77.37.45.2:1000/api/v1/city/updatecity/id
+   
+delete   -->    http://77.37.45.2:1000/api/v1/city/deletecity/id
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
